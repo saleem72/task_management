@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:task_management/screens/colors_screen/colors_screen.dart';
-import 'package:task_management/screens/epsilon/splash_screen.dart';
-import 'package:task_management/theme/color_schemes.g.dart';
+import 'package:task_management/screens/api_helper_screen/api_helper_screen.dart';
 
-import 'blocs/data_provider/data_provider_bloc.dart';
 import 'screens/epsilon/epsilon_screen.dart';
+import 'theme/color_schemes.g.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: googleLightTheme,
-      home: const EpsilonScreen(),
+      home: const ApiHelperScreen(),
       // home: BlocProvider(
       //   create: (context) => DataProviderBloc(),
       //   child: const ColrosScreen(),
